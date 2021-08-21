@@ -1,0 +1,51 @@
+ <html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <div id="mainDiv" class="container">
+      <center>
+        <h3 class="btn btn-default header">IMAGE RECOGNITION</h3>
+        <br>
+        <p style="font-size: 22px;">This can recognize these items: </p>
+        <b id="listOfItems">
+          Watch <img src="https://www.tissotwatches.com/media/catalog/product/cache/2efd18673f425cf398f1f6259e322749/T/0/T058.109.16.031.00_R.png" width="25">
+          <hr>
+          Spoon <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c567.png" width="25">
+          <hr>
+          Phone <img src="https://www.freeiconspng.com/thumbs/phone-png/phone-png-16.png" width="25">
+          <hr>
+          Water Bottle <img src="https://lh3.googleusercontent.com/proxy/koIqBUHMvmR-Br3yhb0KwbnoTH1HJfIuYaJxz67JAjbghxHEb5_w_p8uocpGJkAH2_Qt_i3MLYTm5wjcuxJcmTaQonl9N6eMYnx6QvbDsZca8fteIB7jMz1c4x9A9vt9iI9tgMcyCMcVefNUEdCV18bIW9WSazPnHtF28PnFhxfKmM_TdstM1qg" width="25">
+          <hr>
+        </b>
+        <hr>
+        <label>Camera --</label>
+        <div id="camera"></div>
+        <hr>
+        <label>Result --</label>
+        <div id="result"></div>
+        <hr>
+
+        <button type="button" id="takephoto" class="btn btn-info" onclick="takePicture();">Take photo</button>
+        <button type="button" id="checkphoto" class="btn btn-primary" onclick="checkPicture();">Check</button>
+        <hr>
+        <p style="font-size: 22px;">Object: <span id="object"></span></p>
+        <p style="font-size: 22px;">Accuracy: <span id="accuracy"></span></p>
+      </center>
+    </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
